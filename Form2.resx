@@ -147,7 +147,7 @@ Earth Dragon:
   <data name="pictureBox8.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAoAAAAKACAIAAACDr150AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAA/7JJREFUeF7s/YV7HUe3r4vef+be55x9zl4b1tprffkgYLYli5nNzMzs2I6ZSczM
+        EAAACxABrSO9dQAA/7JJREFUeF7s/YV7HUe3r4vef+be55x9zl4b1tprffkgYLYli5nNzMzs2I6ZSczM
         zMxgxjixY8dsyZIsi3Xf7jHdmZlSYogcyXH9nvG0qqurQT1rjLdGz57d/59XSkpKSkpKSn+6FICVlJSU
         lJRGQArASkpKSkpKIyAFYCUlJSUlpRGQArCSkpKSktIISAFYSUlJSUlpBKQArKSkpKSkNAJSAFZSUlJS
         UhoBKQArKSkpKSmNgBSAlZSUlJSURkAKwEpKSkpKSiMgBWAlJSUlJaURkAKwkpKSkpLSCEgBWElJSUlJ
@@ -2331,7 +2331,7 @@ Earth Dragon:
   <data name="pictureBox7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAoAAAAKACAIAAACDr150AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAA/7JJREFUeF7s/WWYHNe1gI3eX/d+30lsS8OMkkZgTuLQgZycnJBZ0lDzgGSI4ziJ
+        EAAACxABrSO9dQAA/7JJREFUeF7s/WWYHNe1gI3eX/d+30lsS8OMkkZgTuLQgZycnJBZ0lDzgGSI4ziJ
         YztstpiZYZhBo5EsGWJmJkkWS0NNxdSw71pVPT0jGeIktttHWu+znlKrp6mqq/e7164N/x+ZIAiCIIgv
         HRIwQRAEQSQAEjBBEARBJAASMEEQBEEkABIwQRAEQSQAEjBBEARBJAASMEEQBEEkABIwQRAEQSQAEjBB
         EARBJAASMEEQBEEkABIwQRAEQSQAEjBBEARBJAASMEEQBEEkABIwQRAEQSQAEjBBEARBJAASMEEQBEEk
@@ -4092,7 +4092,7 @@ Earth Dragon:
   <data name="pictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAoAAAAKACAIAAACDr150AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAA/7JJREFUeF7svQV8HNe9/u3EKFky23EYm/aW+ZZSvE2ZGe7tbcDMLFgUmGNmJjFr
+        EAAACxABrSO9dQAA/7JJREFUeF7svQV8HNe9/u3EKFky23EYm/aW+ZZSvE2ZGe7tbcDMLFgUmGNmJjFr
         eVfMzAy7K4ZlmJ2ZhfP+zsxKlh1okvba7+ff83yejGdnZ1mZ73kOznITERERERERPXARABMRERERET0E
         EQATERERERE9BBEAExERERERPQQRABMRERERET0EEQATERERERE9BBEAExERERERPQQRABMRERERET0E
         EQATERERERE9BBEAExERERERPQQRABMRERERET0EEQATERERERE9BBEAExERERERPQQRABMRERERET0E
@@ -9837,7 +9837,7 @@ Earth Dragon:
   <data name="pictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAoAAAAKACAIAAACDr150AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAA/7JJREFUeF7s/XWcI9eV8I0/f/8+7/vsJrYHGoTdahjwgBnjOJwn4JluQUlqGLRj
+        EAAACxABrSO9dQAA/7JJREFUeF7s/XWcI9eV8I0/f/8+7/vsJrYHGoTdahjwgBnjOJwn4JluQUlqGLRj
         jhPHjpM47BiGbSebd7Oh3WwWnsXsbrIbsmMa20MeZmgWM5VK53fOrdOabtWAemaa7/dzRiPpFEmqvt+6
         Vbfu/V8gkUgkEolkwpEClkgkEolkEpAClkgkEolkEpAClkgkEolkEpAClkgkEolkEpAClkgkEolkEpAC
         lkgkEolkEpAClkgkEolkEvhfpSsEL2/C4dUb4LQBTlcNz2aA0wY4bYDTBjg94fDqDXD6suHFGeD0ZcOL
@@ -11938,7 +11938,7 @@ Earth Dragon:
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAoAAAAKACAIAAACDr150AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAA/7JJREFUeF7svQV8HNe9/u3EKFky23EYm/aW+ZZSvE2ZGe7tbcDMLFgUmGNmJjFr
+        EAAACxABrSO9dQAA/7JJREFUeF7svQV8HNe9/u3EKFky23EYm/aW+ZZSvE2ZGe7tbcDMLFgUmGNmJjFr
         eVfMzAy7K4ZlmJ2ZhfP+zsxKlh1okvba7+ff83yejGdnZ1mZ73kOznITERERERERPXARABMRERERET0E
         EQATERERERE9BBEAExERERERPQQRABMRERERET0EEQATERERERE9BBEAExERERERPQQRABMRERERET0E
         EQATERERERE9BBEAExERERERPQQRABMRERERET0EEQATERERERE9BBEAExERERERPQQRABMRERERET0E
@@ -17683,7 +17683,7 @@ Earth Dragon:
   <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAoAAAAKACAIAAACDr150AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAA/7JJREFUeF7s/YV7HUe3r4vef+be55x9zl4b1tprffkgYLYli5nNzMzs2I6ZSczM
+        EAAACxABrSO9dQAA/7JJREFUeF7s/YV7HUe3r4vef+be55x9zl4b1tprffkgYLYli5nNzMzs2I6ZSczM
         zMxgxjixY8dsyZIsi3Xf7jHdmZlSYogcyXH9nvG0qqurQT1rjLdGz57d/59XSkpKSkpKSn+6FICVlJSU
         lJRGQArASkpKSkpKIyAFYCUlJSUlpRGQArCSkpKSktIISAFYSUlJSUlpBKQArKSkpKSkNAJSAFZSUlJS
         UhoBKQArKSkpKSmNgBSAlZSUlJSURkAKwEpKSkpKSiMgBWAlJSUlJaURkAKwkpKSkpLSCEgBWElJSUlJ
@@ -19867,7 +19867,7 @@ Earth Dragon:
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAoAAAAKACAIAAACDr150AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAA/7JJREFUeF7s/WWYHNe1gI3eX/d+30lsS8OMkkZgTuLQgZycnJBZ0lDzgGSI4ziJ
+        EAAACxABrSO9dQAA/7JJREFUeF7s/WWYHNe1gI3eX/d+30lsS8OMkkZgTuLQgZycnJBZ0lDzgGSI4ziJ
         YztstpiZYZhBo5EsGWJmJkkWS0NNxdSw71pVPT0jGeIktttHWu+znlKrp6mqq/e7164N/x+ZIAiCIIgv
         HRIwQRAEQSQAEjBBEARBJAASMEEQBEEkABIwQRAEQSQAEjBBEARBJAASMEEQBEEkABIwQRAEQSQAEjBB
         EARBJAASMEEQBEEkABIwQRAEQSQAEjBBEARBJAASMEEQBEEkABIwQRAEQSQAEjBBEARBJAASMEEQBEEk
@@ -21628,7 +21628,7 @@ Earth Dragon:
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAoAAAAKACAIAAACDr150AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAA/7JJREFUeF7s/XWcI9eV8I0/f/8+7/vsJrYHGoTdahjwgBnjOJwn4JluQUlqGLRj
+        EAAACxABrSO9dQAA/7JJREFUeF7s/XWcI9eV8I0/f/8+7/vsJrYHGoTdahjwgBnjOJwn4JluQUlqGLRj
         jhPHjpM47BiGbSebd7Oh3WwWnsXsbrIbsmMa20MeZmgWM5VK53fOrdOabtWAemaa7/dzRiPpFEmqvt+6
         Vbfu/V8gkUgkEolkwpEClkgkEolkEpAClkgkEolkEpAClkgkEolkEpAClkgkEolkEpAClkgkEolkEpAC
         lkgkEolkEpAClkgkEolkEvhfpSsEL2/C4dUb4LQBTlcNz2aA0wY4bYDTBjg94fDqDXD6suHFGeD0ZcOL

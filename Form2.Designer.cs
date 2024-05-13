@@ -87,6 +87,7 @@
             startbtn.TabIndex = 8;
             startbtn.Text = "Start Game";
             startbtn.UseVisualStyleBackColor = true;
+            startbtn.Click += startbtn_Click;
             // 
             // groupBox3
             // 
@@ -98,6 +99,7 @@
             groupBox3.TabIndex = 7;
             groupBox3.TabStop = false;
             groupBox3.Text = "Dragon Stats:";
+            groupBox3.Enter += groupBox3_Enter;
             // 
             // label7
             // 
@@ -107,6 +109,7 @@
             label7.Size = new Size(184, 460);
             label7.TabIndex = 0;
             label7.Text = resources.GetString("label7.Text");
+            label7.Click += label7_Click;
             // 
             // groupBox2
             // 
@@ -132,6 +135,7 @@
             savebtn2.TabIndex = 6;
             savebtn2.Text = "Save";
             savebtn2.UseVisualStyleBackColor = true;
+            savebtn2.Click += savebtn2_Click;
             // 
             // groupBox5
             // 
@@ -149,6 +153,7 @@
             groupBox5.TabIndex = 6;
             groupBox5.TabStop = false;
             groupBox5.Text = "Dragon Type";
+            groupBox5.Enter += groupBox5_Enter;
             // 
             // pictureBox8
             // 
@@ -159,6 +164,7 @@
             pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox8.TabIndex = 11;
             pictureBox8.TabStop = false;
+            pictureBox8.Click += pictureBox8_Click;
             // 
             // pictureBox7
             // 
@@ -169,6 +175,7 @@
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox7.TabIndex = 10;
             pictureBox7.TabStop = false;
+            pictureBox7.Click += pictureBox7_Click;
             // 
             // pictureBox6
             // 
@@ -179,6 +186,7 @@
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 9;
             pictureBox6.TabStop = false;
+            pictureBox6.Click += pictureBox6_Click;
             // 
             // pictureBox5
             // 
@@ -189,6 +197,7 @@
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 8;
             pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
             // 
             // earthDrag2
             // 
@@ -200,6 +209,7 @@
             earthDrag2.TabStop = true;
             earthDrag2.Text = "Earth Dragon";
             earthDrag2.UseVisualStyleBackColor = true;
+            earthDrag2.CheckedChanged += earthDrag2_CheckedChanged;
             // 
             // windDrag2
             // 
@@ -211,6 +221,7 @@
             windDrag2.TabStop = true;
             windDrag2.Text = "Wind Dragon";
             windDrag2.UseVisualStyleBackColor = true;
+            windDrag2.CheckedChanged += windDrag2_CheckedChanged;
             // 
             // iceDrag2
             // 
@@ -222,6 +233,7 @@
             iceDrag2.TabStop = true;
             iceDrag2.Text = "Ice Dragon";
             iceDrag2.UseVisualStyleBackColor = true;
+            iceDrag2.CheckedChanged += iceDrag2_CheckedChanged;
             // 
             // fireDrag2
             // 
@@ -233,6 +245,7 @@
             fireDrag2.TabStop = true;
             fireDrag2.Text = "Fire Dragon";
             fireDrag2.UseVisualStyleBackColor = true;
+            fireDrag2.CheckedChanged += fireDrag2_CheckedChanged;
             // 
             // label6
             // 
@@ -242,6 +255,7 @@
             label6.Size = new Size(103, 20);
             label6.TabIndex = 5;
             label6.Text = "Dragon Name";
+            label6.Click += label6_Click;
             // 
             // label4
             // 
@@ -251,6 +265,7 @@
             label4.Size = new Size(93, 20);
             label4.TabIndex = 4;
             label4.Text = "Player Name";
+            label4.Click += label4_Click;
             // 
             // dragon2
             // 
@@ -258,6 +273,7 @@
             dragon2.Name = "dragon2";
             dragon2.Size = new Size(180, 27);
             dragon2.TabIndex = 3;
+            dragon2.TextChanged += dragon2_TextChanged;
             // 
             // player2
             // 
@@ -265,6 +281,7 @@
             player2.Name = "player2";
             player2.Size = new Size(180, 27);
             player2.TabIndex = 2;
+            player2.TextChanged += player2_TextChanged;
             // 
             // label2
             // 
@@ -275,6 +292,7 @@
             label2.Size = new Size(74, 23);
             label2.TabIndex = 0;
             label2.Text = "Player 2";
+            label2.Click += label2_Click;
             // 
             // groupBox1
             // 
@@ -300,6 +318,7 @@
             savebtn1.TabIndex = 0;
             savebtn1.Text = "Save";
             savebtn1.UseVisualStyleBackColor = true;
+            savebtn1.Click += savebtn1_Click;
             // 
             // groupBox4
             // 
@@ -317,6 +336,7 @@
             groupBox4.TabIndex = 5;
             groupBox4.TabStop = false;
             groupBox4.Text = "Dragon Type";
+            groupBox4.Enter += groupBox4_Enter;
             // 
             // pictureBox2
             // 
@@ -327,6 +347,7 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 8;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox4
             // 
@@ -359,6 +380,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // earthDrag1
             // 
@@ -442,6 +464,7 @@
             player1.Name = "player1";
             player1.Size = new Size(182, 27);
             player1.TabIndex = 1;
+            player1.TextChanged += player1_TextChanged;
             // 
             // label1
             // 
@@ -466,6 +489,7 @@
             Controls.Add(groupBox1);
             Name = "Form2";
             Text = "Form2";
+            Load += Form2_Load;
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
             groupBox2.ResumeLayout(false);

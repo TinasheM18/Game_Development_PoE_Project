@@ -57,6 +57,7 @@
             pcBoxPlayerDragon.SizeMode = PictureBoxSizeMode.Zoom;
             pcBoxPlayerDragon.TabIndex = 1;
             pcBoxPlayerDragon.TabStop = false;
+            pcBoxPlayerDragon.Click += pcBoxPlayerDragon_Click;
             // 
             // lblPlayerHitPoints
             // 
@@ -88,6 +89,7 @@
             btnSpecialAttck.TabIndex = 4;
             btnSpecialAttck.Text = "Special Attack (9 DP)";
             btnSpecialAttck.UseVisualStyleBackColor = true;
+            btnSpecialAttck.Click += btnSpecialAttck_Click;
             // 
             // btnBlock
             // 
@@ -97,6 +99,7 @@
             btnBlock.TabIndex = 5;
             btnBlock.Text = "Block (-5 DP)";
             btnBlock.UseVisualStyleBackColor = true;
+            btnBlock.Click += btnBlock_Click;
             // 
             // txtBoxBattleLog
             // 
@@ -108,6 +111,7 @@
             txtBoxBattleLog.Size = new Size(1035, 145);
             txtBoxBattleLog.TabIndex = 7;
             txtBoxBattleLog.Text = "Lupe's Turn:\r\nTundra attacks Boulder and deals 4 DP, Boulder has 36 HP left\r\n****************************************************************************";
+            txtBoxBattleLog.TextChanged += txtBoxBattleLog_TextChanged;
             // 
             // pcBoxOppDragon
             // 
@@ -118,6 +122,7 @@
             pcBoxOppDragon.SizeMode = PictureBoxSizeMode.Zoom;
             pcBoxOppDragon.TabIndex = 8;
             pcBoxOppDragon.TabStop = false;
+            pcBoxOppDragon.Click += pcBoxOppDragon_Click;
             // 
             // lblOppDragonNameAndType
             // 
@@ -129,6 +134,7 @@
             lblOppDragonNameAndType.Size = new Size(249, 32);
             lblOppDragonNameAndType.TabIndex = 9;
             lblOppDragonNameAndType.Text = "Boulder, Earth Dragon";
+            lblOppDragonNameAndType.Click += lblOppDragonNameAndType_Click;
             // 
             // lblOppDragonHP
             // 
@@ -154,6 +160,7 @@
             grpBoxOppDetails.TabIndex = 12;
             grpBoxOppDetails.TabStop = false;
             grpBoxOppDetails.Text = "Opp: Gustavo";
+            grpBoxOppDetails.Enter += grpBoxOppDetails_Enter;
             // 
             // grpBoxPlayerDetails
             // 
@@ -181,6 +188,7 @@
             grpBoxBattleLog.TabIndex = 14;
             grpBoxBattleLog.TabStop = false;
             grpBoxBattleLog.Text = "Battle Log";
+            grpBoxBattleLog.Enter += grpBoxBattleLog_Enter;
             // 
             // PlayerTurnInterface
             // 
