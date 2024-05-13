@@ -1,20 +1,23 @@
+using System.Xml.Linq;
+
 namespace GADE5121_PoE_Project
 {
     public partial class PlayerTurnInterface : Form
     {
-        private string[] p1data = new string[4];
-        private string[] p2data = new string[4];
-        private int[] p1values = new int[4];
-        private int[] p2values = new int[4];
-
-        string turn = "";
-        bool OppBlocking = false;
-        string currentPlayer = "";
 
         public PlayerTurnInterface(string[] p1data)
         {
             InitializeComponent();
         }
+
+        private string[] p1data = new string[4];
+        private string[] p2data = new string[4];
+        private int[] p1values = new int[4];
+        private int[] p2values = new int[4];
+
+        static string turn = "";
+        static bool OppBlocking = false;
+        static string currentPlayer = "";
 
         public PlayerTurnInterface(string[] p1data, string[] p2data, int[] p1values, int[] p2values) : this(p1data)
         {
@@ -26,6 +29,8 @@ namespace GADE5121_PoE_Project
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+
             turn = takeInitiative();
             turnSwitch(turn);
         }
@@ -47,19 +52,26 @@ namespace GADE5121_PoE_Project
 
         private void btnAttack_Click(object sender, EventArgs e)
         {
+            btnAttack_Click(sender, e, p2data);
+        }
+
+        private void btnAttack_Click(object sender, EventArgs e, string[] p2data)
+        {
             if (turn == "P1")
             {
-               p2values[0] = Attack(p2values[0], p1values[1], p2values[3], OppBlocking);
-                txtBoxBattleLog += "\n" + p1data[1] + " attacks, " + p2data[1] ++ " has " + p2values[0] + "HP remaining";
-                txtBoxBattleLog += "\n**********************************************************"
+                p2values[0] = Attack(p2values[0], p1values[1], p2values[3], OppBlocking);
+                string p1DragonName = p1data[1].ToString();
+                string output = "\n" + p1DragonName + " attacks, " + p2data[1] + " has " + p2values[0] + "HP remaining";
+                txtBoxBattleLog.Text += output;
+                txtBoxBattleLog.Text += "\n**********************************************************";
 
             }
 
             else
             {
                 p1values[0] = Attack(p1values[0], p2values[1], p1values[3], OppBlocking);
-                txtBoxBattleLog += "\n" + p2data[1] + " attacks, " + p1data[1]++ " has " + p1values[0] + "HP remaining";
-                txtBoxBattleLog += "\n**********************************************************"
+                txtBoxBattleLog.Text += "\n" + p2data[1] + " attacks, " + p1data[1] + " has " + p1values[0] + "HP remaining";
+                txtBoxBattleLog.Text += "\n**********************************************************";
 
             }
 
@@ -76,16 +88,16 @@ namespace GADE5121_PoE_Project
             if (turn == "P1")
             {
                 p2values[0] = SPAttack(p2values[0], p1values[1], p2values[3], OppBlocking);
-                txtBoxBattleLog += "\n" + p1data[1] + " special attacks, " + p2data[1]++ " has " + p2values[0] + "HP remaining";
-                txtBoxBattleLog += "\n**********************************************************"
+                txtBoxBattleLog.Text += "\n" + p1data[1] + " special attacks, " + p2data[1]+ " has " + p2values[0] + "HP remaining";
+                txtBoxBattleLog.Text += "\n**********************************************************";
 
             }
 
             else
             {
                 p1values[0] = SPAttack(p1values[0], p2values[1], p1values[3], OppBlocking);
-                txtBoxBattleLog += "\n" + p2data[1] + " attacks, " + p1data[1]++ " has " + p1values[0] + "HP remaining";
-                txtBoxBattleLog += "\n**********************************************************"
+                txtBoxBattleLog.Text += "\n" + p2data[1] + " attacks, " + p1data[1] + " has " + p1values[0] + "HP remaining";
+                txtBoxBattleLog.Text += "\n**********************************************************";
 
             }
 
@@ -98,15 +110,15 @@ namespace GADE5121_PoE_Project
 
             if (turn == "P1")
             {
-                txtBoxBattleLog += "\n" + p1values[0] + " blocks!";
-                txtBoxBattleLog += "\n**********************************************************"
+                txtBoxBattleLog.Text += "\n" + p1values[0] + " blocks!";
+                txtBoxBattleLog.Text += "\n**********************************************************";
 
             }
 
             else
             {
-                txtBoxBattleLog += "\n" + p2values[0] + " blocks!";
-                txtBoxBattleLog += "\n**********************************************************"
+                txtBoxBattleLog.Text += "\n" + p2values[0] + " blocks!";
+                txtBoxBattleLog.Text += "\n**********************************************************";
 
             }
 
@@ -142,13 +154,13 @@ namespace GADE5121_PoE_Project
         public static int randomRoll()
         {
             Random diceRoll = new Random();
-            int roll = diceRoll.Next(1,7);
+            int roll = diceRoll.Next(1, 7);
             return roll;
         }
 
         //Initiative method to determine which player takes the first turn
         //returns which player takes the first turn
-        public static string takeInitiative()
+        private string takeInitiative()
         {
             int p1Roll = randomRoll();
             int p2Roll = randomRoll();
@@ -172,12 +184,13 @@ namespace GADE5121_PoE_Project
             }
 
             txtBoxBattleLog.Text = p1data[0] + " rolled a " + p1Roll + "and " + p2data[0] + " rolled a " + p2Roll + "\n" + playerTurn + " takes the first turn";
-            txtBoxBattleLog.Text += "**********************************************************"
+            txtBoxBattleLog.Text += "**********************************************************";
 
             return playerTurn;
         }
 
         //method to customize turn player form according to current players turn
+        
         public void turnSwitch(string pTurn)
         {
             if (pTurn == "P1")
@@ -186,7 +199,7 @@ namespace GADE5121_PoE_Project
                 lblPlayerHitPoints.Text = "HP:\n" + p1values[0];
                 btnAttack.Text = "Attack [" + p1values[1] + " DP]";
                 btnSpecialAttck.Text = "Special Attack [" + p1values[2] + " DP]";
-                btnBlock.Text = "Block [-" + p1values[3] +" DP]";
+                btnBlock.Text = "Block [-" + p1values[3] + " DP]";
 
                 grpBoxOppDetails.Text = "Opp: " + p2data[0];
                 lblOppDragonNameAndType.Text = p2data[1] + ", " + p2data[2];
@@ -212,7 +225,7 @@ namespace GADE5121_PoE_Project
         }
 
         //method to switch current players turn value
-        public static void nextTurn(string nextTurn)
+        public void nextTurn(string nextTurn)
         {
             if (nextTurn == "P1")
             {
@@ -236,7 +249,7 @@ namespace GADE5121_PoE_Project
         }
 
         //method to deal attack damage to opponents HP and return remaining HP
-        public static int Attack(int oppHP,int attackDMG, int blockDMG, bool OppBlocking)
+        public static int Attack(int oppHP, int attackDMG, int blockDMG, bool OppBlocking)
         {
             if (OppBlocking)
             {
@@ -269,6 +282,11 @@ namespace GADE5121_PoE_Project
             }
 
             return oppHP;
+        }
+
+        private void grpBoxPlayerDetails_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

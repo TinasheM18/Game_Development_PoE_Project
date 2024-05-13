@@ -176,6 +176,7 @@
             grpBoxPlayerDetails.TabIndex = 13;
             grpBoxPlayerDetails.TabStop = false;
             grpBoxPlayerDetails.Text = "Tundra, Ice Dragon";
+            grpBoxPlayerDetails.Enter += grpBoxPlayerDetails_Enter;
             // 
             // grpBoxBattleLog
             // 
